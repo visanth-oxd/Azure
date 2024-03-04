@@ -21,13 +21,6 @@ provider "azurerm" {
   skip_provider_registration = true
 }
 
-# Register the resource providers
-provider "azurerm" {
-  alias           = "terrabio"
-  subscription_id = "e6f042b9-1ee2-4091-9252-1ff2ad41fe9e"
-  features {}
-}
-
 resource "azurerm_resource_provider_registration" "terrabio-registered-providers" {
   provider_names = [
     "Microsoft.Storage",
