@@ -17,9 +17,6 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
 
-      - name: Change directory
-        run: cd resource-provider-registration
-
       - name: Terraform Init
         run: terraform init
 
